@@ -3,6 +3,6 @@
 const mongoose = require('mongoose');
 
 //mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/googlebooks');
-mongoose.connect(process.env.MONGOURI || 'mongodb://localhost:27017/cluster0')
+mongoose.connect(process.env.MONGOURI || 'mongodb://127.0.0.1:27017/book-search-engine')
 
 module.exports = mongoose.connection;
