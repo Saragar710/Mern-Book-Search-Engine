@@ -1,9 +1,9 @@
 const typeDefs = `
     type Query {
-
+        me: user
     }
     type Mutation {
-        login: String
+        login: auth
         addUser: String
         
 
