@@ -8,9 +8,4 @@ mutation loginUser(username: String!, password: String!,) {
 }
 
 
-
-
-
-
-
 `
