@@ -1,11 +1,13 @@
 const typeDefs = `
     type me{
+        _id: ID
          username: String
          email: String
          password: String
          savedBooks: []
 
     }
+    type
     type Mutation {
         login{
             username: String
