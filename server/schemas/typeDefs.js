@@ -1,10 +1,28 @@
 const typeDefs = `
-    type Query {
-        me: user
+    type me{
+         username: String
+         email: String
+         password: String
+         savedBooks: []
+
     }
     type Mutation {
-        login: auth
-        addUser: String
+        login{
+            username: String
+            email: String
+            password: String
+            auth: auth
+        }
+        addUser{
+            username: String
+            email: String
+            password: String
+            auth: auth
+        } 
+            saveBook{
+                 
+            }
+        
         
 
     }
