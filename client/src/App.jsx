@@ -1,6 +1,7 @@
 import './App.css';
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 //import { setContext } from '@apollo/client/link/context';
+//import { ApolloServer } from '@apollo/server';
 import { Outlet } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
