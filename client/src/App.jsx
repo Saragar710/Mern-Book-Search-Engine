@@ -1,6 +1,10 @@
 import React from 'react';
 //import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {  Routes, Route } from 'react-router-dom';
+
+import { Outlet } from 'react-router-dom';
+
+// import {  Routes, Route } from 'react-router-dom';
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -9,8 +13,8 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import SearchBooks from './pages/SearchBooks';
-import SavedBooks from './pages/SavedBooks';
+// import SearchBooks from './pages/SearchBooks';
+// import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
 // Construct our main GraphQL API endpoint
@@ -37,30 +41,38 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+// function App() {
+//   return (
+//     <ApolloProvider client={client}>
+    
+//         <>
+//           <Navbar />
+//           <Routes>
+//             <Route 
+//               path="/" 
+//               element={<SearchBooks/>} 
+//             />
+//             <Route 
+//               path="/saved" 
+//               element={<SavedBooks/>} 
+//             />
+//             <Route 
+//               path='*' 
+//               element={<h1 className="display-2">Wrong page!</h1>}
+//             />
+//           </Routes>
+//         </>
+     
+//     </ApolloProvider>
+//   );
+// }
 function App() {
   return (
     <ApolloProvider client={client}>
-    
-        <>
-          <Navbar />
-          <Routes>
-            <Route 
-              path="/" 
-              element={<SearchBooks/>} 
-            />
-            <Route 
-              path="/saved" 
-              element={<SavedBooks/>} 
-            />
-            <Route 
-              path='*' 
-              element={<h1 className="display-2">Wrong page!</h1>}
-            />
-          </Routes>
-        </>
-     
+      <Navbar />
+      <Outlet />
     </ApolloProvider>
   );
 }
 
-export default App;
+export default App;;
