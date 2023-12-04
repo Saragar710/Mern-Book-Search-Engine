@@ -80,11 +80,7 @@ const SearchBooks = () => {
     }
 
     try {
-      // const response = await saveBook(bookToSave, token);
-
-      // if (!response.ok) {
-      //   throw new Error('something went wrong!');
-      // }
+    
       const { data } = await saveBook({
         variables: { bookData: { ...bookToSave } },
       });
@@ -145,10 +141,7 @@ const SearchBooks = () => {
                     {Auth.loggedIn() && (
                       <Button
                       
-                        // disabled={savedBookIds?.some((savedBookId) => savedBookId === book.bookId)}
-                        // className='btn-block btn-info'
-                        // onClick={() => handleSaveBook(book.bookId)}>
-                        // {savedBookIds?.some((savedBookId) => savedBookId === book.bookId)
+
                         disabled={savedBookIds?.some(
                           (savedId) => savedId === book.bookId
                         )}
