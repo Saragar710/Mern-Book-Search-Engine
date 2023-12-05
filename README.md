@@ -23,5 +23,7 @@ https://github.com/Saragar710/React-Portfolio2023
 
 
 ## Credits
+I worked with an amazing Tutor on this.
 
 ## License
+Please see github repo for information regarding the license.
