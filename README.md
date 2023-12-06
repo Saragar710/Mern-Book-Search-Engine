@@ -18,12 +18,13 @@ mongoose
 bcrypt
 nodemon and jsonwebtoken
 
+https://mern-search2023-3b5463e9a0b2.herokuapp.com/
 
 https://github.com/Saragar710/React-Portfolio2023
 
 
 ## Credits
-I worked with an amazing Tutor on this.
+I worked with an amazing Tutor on this. Sandra Smith is so supportive, patient and kind. I could not have completed this without her! I also want to give a huge thanks to Cody Chase! Every Heroku error or Mongo Atalas error I had, he has an answer for! Thank you both so much!!
 
 ## License
 Please see github repo for information regarding the license.
